@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:layout_marginTop="@dimen/margin_l"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_l">
+
+        <EditText
+            android:id="@+id/addcar_edt_platenum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:hint="请输入车牌号"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/txtsize_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/addcar_txt_brand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:hint="请选择品牌"
+            android:gravity="center_vertical"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/txtsize_l" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:background="@color/divider" />
+
+        <EditText
+            android:id="@+id/addcar_edt_color"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:hint="请输入颜色"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/txtsize_l" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:background="@color/divider" />
+
+        <TextView
+            android:id="@+id/addcar_txt_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/transparent"
+            android:hint="请选择类型"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/txtsize_l" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:layout_marginTop="@dimen/margin_l"
+        android:background="@color/divider" />
+
+    <Button
+        android:id="@+id/addcar_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:text="确定"
+        android:textColor="@color/txt_red"
+        android:textSize="@dimen/txtsize_l" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+
+</LinearLayout>

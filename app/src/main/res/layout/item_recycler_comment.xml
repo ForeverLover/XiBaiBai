@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 产品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg_frame"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_l"
+    android:paddingRight="@dimen/margin_l">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_m"
+        android:paddingTop="@dimen/margin_m">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/itemcomment_img_employeehead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemcomment_txt_employeename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张师傅"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/txtsize_l" />
+
+            <TextView
+                android:id="@+id/itemcomment_txt_employeephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000000001"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txtsize_s" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/itemcomment_ratingbar_employeestar"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:isIndicator="true"
+            android:progressDrawable="@drawable/ratingbar_level"
+            android:rating="5.0" />
+
+        <TextView
+            android:id="@+id/itemcomment_txt_employeestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="3.5分"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_s" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/itemcomment_v_line1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shape_line_dotted" />
+
+    <TextView
+        android:id="@+id/itemcomment_txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_m"
+        android:text="评价内容"
+        android:textColor="@color/txt_black"
+        android:textSize="@dimen/txtsize_l" />
+
+    <View
+        android:id="@+id/itemcomment_v_line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shape_line_dotted" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_m">
+
+        <TextView
+            android:id="@+id/itemcomment_txt_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="川A 988888"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/txtsize_m" />
+
+        <TextView
+            android:id="@+id/itemcomment_txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2015.05.21 14:00"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/txtsize_m" />
+    </RelativeLayout>
+</LinearLayout>

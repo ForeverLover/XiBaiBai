@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@android:color/white" android:state_pressed="false"/>
+    <item android:color="@color/login_selector" android:state_pressed="true"/>
+
+</selector>

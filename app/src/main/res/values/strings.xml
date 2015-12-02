@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">洗白白</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="dialog_watting">加载中..</string>
+    <string name="main_txt_platenum">添加车辆</string>
+    <string name="main_txt_now">即刻洗车</string>
+    <string name="main_txt_reserve">预约上门</string>
+    <string name="format_price">￥%1$s</string>
+    <string name="nowvisit_format_time">%1$s\"</string>
+    <string name="address_none">待添加</string>
+    <string name="order_prefix_checked">· </string>
+    <string name="order_finish">已完成</string>
+    <string name="order_ing">进行中</string>
+    <string name="toast_notfull">填写信息不完整</string>
+    <string name="dia_positive">确定</string>
+    <string name="dia_negative">取消</string>
+    <string name="dialog_update">版本更新</string>
+    <string name="dia_forceupdate">重大更新</string>
+    <string name="dia_normalupdate">版本更新</string>
+    <string name="dia_update">更新</string>
+    <string name="dia_exit">退出</string>
+    <string name="toast_downloading">后台下载中..</string>
+    <string name="toast_noupdate">已是最新版本</string>
+    <string name="toast_nullage">请输入年龄</string>
+    <string name="toast_nullname">请输入昵称</string>
+    <!--Eric-->
+    <string name="place_order">下单</string>
+</resources>

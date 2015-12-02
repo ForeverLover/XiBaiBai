@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/reserve_rgroup_day"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/reserve_rbtn_today"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_timescope"
+                android:button="@null"
+                android:gravity="center"
+                android:text="今天"
+                android:textColor="@color/selector_txt_timescope"
+                android:textSize="@dimen/txtsize_m" />
+
+            <View
+                android:layout_width="@dimen/size_divider"
+                android:layout_height="match_parent"
+                android:background="@color/txt_gray" />
+
+            <RadioButton
+                android:id="@+id/reserve_rbtn_tommorow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_timescope"
+                android:button="@null"
+                android:gravity="center"
+                android:text="8月20日"
+                android:textColor="@color/selector_txt_timescope"
+                android:textSize="@dimen/txtsize_m" />
+
+            <View
+                android:layout_width="@dimen/size_divider"
+                android:layout_height="match_parent"
+                android:background="@color/txt_gray" />
+
+            <RadioButton
+                android:id="@+id/reserve_rbtn_aftertommorow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_bg_timescope"
+                android:button="@null"
+                android:gravity="center"
+                android:text="8月21日"
+                android:textColor="@color/selector_txt_timescope"
+                android:textSize="@dimen/txtsize_m" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:background="@color/txt_gray" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/reserve_pager_timescope"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:layout_marginBottom="@dimen/margin_m"
+            android:layout_marginTop="@dimen/margin_m"
+            android:background="@color/txt_gray" />
+
+        <FrameLayout
+            android:id="@+id/reserve_frame_container2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

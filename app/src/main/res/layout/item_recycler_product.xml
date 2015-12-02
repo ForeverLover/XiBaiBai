@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 产品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/itemproduct_vg_bg"
+        android:layout_width="@dimen/main_proitem_width"
+        android:layout_height="@dimen/main_proitem_height"
+        android:background="@color/bg_transp"
+        android:paddingBottom="@dimen/margin_m"
+        android:paddingLeft="@dimen/margin_l"
+        android:paddingRight="@dimen/margin_l"
+        android:paddingTop="@dimen/margin_l">
+
+        <RelativeLayout
+            android:id="@+id/itemproduct_vg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/itemproduct_txt_title"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:text="简洗"
+                android:singleLine="true"
+                android:layout_toLeftOf="@+id/itemproduct_txt_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txtsize_l" />
+
+            <TextView
+                android:id="@+id/itemproduct_txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:text="￥100.00"
+                android:textColor="@color/txt_orange"
+                android:textSize="@dimen/txtsize_m" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/itemproduct_txt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/itemproduct_vg_title"
+            android:layout_alignRight="@+id/itemproduct_vg_title"
+            android:layout_below="@+id/itemproduct_vg_title"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:layout_marginTop="@dimen/margin_s"
+            android:text="简单清洗，快捷无需啊手机开发进度十分抗拒的是发附近看到手机发呆"
+            android:textSize="@dimen/txtsize_s" />
+
+
+    </RelativeLayout>
+</LinearLayout>

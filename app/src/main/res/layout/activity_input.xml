@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_edt_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:gravity="top|left"
+    android:padding="@dimen/margin_l"
+    android:text="哈哈哈哈哈哈"
+    android:textColor="@color/black"
+    android:textSize="@dimen/txtsize_l" />

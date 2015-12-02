@@ -1,0 +1,10 @@
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_bg_transparent_gray"
+    android:button="@null"
+    android:drawableRight="@drawable/selector_diy_rbtn_check"
+    android:paddingLeft="20dp"
+    android:paddingRight="25dp"
+    android:textColor="@color/selector_diy_txt_tab"
+    android:textSize="@dimen/txtsize_l" />

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/itemsearchaddress_txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/margin_m"
+        android:layout_marginRight="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_m"
+        android:text="地名地名"
+        android:textColor="@color/txt_black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/itemsearchaddress_txt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="@dimen/margin_m"
+        android:layout_marginTop="@dimen/margin_m"
+        android:text="地名地名"
+        android:textColor="@color/txt_darkgray"
+        android:textSize="@dimen/txtsize_m" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+</LinearLayout>

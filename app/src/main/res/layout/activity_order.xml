@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/order_rgroup_status"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:checkedButton="@+id/order_rbtn_ing"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/order_rbtn_ing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_bg_transparent_gray"
+            android:button="@null"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:drawableLeft="@drawable/selector_rbtn_check"
+            android:gravity="center"
+            android:text="@string/order_ing"
+            android:textColor="@color/selector_order_txt_tab"
+            android:textSize="@dimen/txtsize_l" />
+
+        <View
+            android:layout_width="@dimen/size_divider"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/divider" />
+
+        <RadioButton
+            android:id="@+id/order_rbtn_finish"
+            android:layout_width="0dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/selector_rbtn_check"
+            android:background="@drawable/selector_bg_transparent_gray"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/order_finish"
+            android:textColor="@color/selector_order_txt_tab"
+            android:textSize="@dimen/txtsize_l" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

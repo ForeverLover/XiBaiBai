@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp" >
+
+        <com.jph.xibaibai.mview.picklist.ClearEditText
+            android:id="@+id/picklist_edt_filt"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="36dp"
+            android:background="@drawable/contact_search_box"
+            android:hint="搜索"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignLeft="@+id/picklist_edt_filt"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/contact_search" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/picklist_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:divider="@color/divider"
+            android:dividerHeight="@dimen/size_divider" />
+
+        <TextView
+            android:id="@+id/picklist_txt_dia"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="72sp"
+            android:visibility="invisible" />
+
+        <com.jph.xibaibai.mview.picklist.SideBar
+            android:id="@+id/picklist_sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</LinearLayout>

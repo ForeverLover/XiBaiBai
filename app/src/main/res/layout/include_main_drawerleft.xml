@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/main_drawerleft_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_l"
+    android:paddingRight="@dimen/margin_l">
+
+    <LinearLayout
+        android:id="@+id/main_vg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_l"
+        android:paddingTop="@dimen/margin_l">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/main_img_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_m"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/txtsize_xl" />
+
+            <TextView
+                android:id="@+id/main_txt_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15612345678"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/txtsize_xl" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_go" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:id="@+id/main_vg_order"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_m"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_m">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/drawleft_icon_order" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="我的订单"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_xl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_vg_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_m">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/drawleft_icon_wallet" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="我的钱包"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_xl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_vg_comment"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_m">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/drawleft_icon_comment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="全部评价"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_xl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_vg_cust_service"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_m">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/drawleft_icon_comment" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="联系客服"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_xl" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+
+    <LinearLayout
+        android:id="@+id/main_vg_message"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_m"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_m">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/drawleft_icon_systemmsg" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="系统消息"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_xl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_vg_setting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_m">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/drawleft_icon_setting" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_s"
+            android:text="设置"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_xl" />
+
+    </LinearLayout>
+</LinearLayout>

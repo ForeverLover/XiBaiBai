@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><!-- title -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_fourty_eight"
+    android:background="@color/them_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_txt"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/title_img_left"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/margin_l"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/back_img"
+        android:background="@drawable/selector_bg_transparent_gray"
+        android:minWidth="?attr/actionBarSize"
+        android:scaleType="fitCenter"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/title_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_bg_transparent_gray"
+        android:minWidth="?attr/actionBarSize"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/title_img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_bg_transparent_gray"
+        android:minWidth="?attr/actionBarSize"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/title_btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/selector_bg_transparent_gray"
+        android:minWidth="?attr/actionBarSize"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

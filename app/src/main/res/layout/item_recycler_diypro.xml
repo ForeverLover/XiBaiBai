@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><!--选择相册-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.jph.xibaibai.mview.scaleview.ScaleImageView
+            android:id="@+id/itemdiypro_img_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:modelby="by_width" />
+
+        <TextView
+            android:id="@+id/itemdiypro_txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/itemdiypro_img_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dp"
+            android:text="￥21"
+            android:textColor="@color/txt_orange"
+            android:textSize="@dimen/txtsize_s" />
+
+        <TextView
+            android:id="@+id/itemdiypro_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemdiypro_img_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_s" />
+    </RelativeLayout>
+</LinearLayout>

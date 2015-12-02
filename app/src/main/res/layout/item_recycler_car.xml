@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 产品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_l">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemcar_txt_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:text="奔驰 CLA260 白色"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_l" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_go" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/itemcar_txt_platenum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:text="@string/main_txt_platenum"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/txtsize_m" />
+
+        <TextView
+            android:id="@+id/itemcar_txt_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/margin_s"
+            android:paddingRight="@dimen/margin_s"
+            android:paddingTop="3dp"
+            android:text="默认车辆"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_m" />
+    </LinearLayout>
+</LinearLayout>

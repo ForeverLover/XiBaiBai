@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_l"
+        android:paddingRight="@dimen/margin_l">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单名称"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_l" />
+
+        <TextView
+            android:id="@+id/payorder_txt_ordername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="DIY服务"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_l" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_l"
+        android:paddingRight="@dimen/margin_l">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单名称"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_l" />
+
+        <TextView
+            android:id="@+id/payorder_txt_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="￥0.0"
+            android:textColor="@color/red"
+            android:textSize="@dimen/txtsize_l"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:background="@color/divider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:layout_marginTop="@dimen/margin_l"
+        android:background="@color/divider" />
+
+    <RadioGroup
+        android:id="@+id/payorder_rgroup_payway"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:checkedButton="@+id/payorder_rbtn_alipay"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/payorder_rbtn_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bg_transparent_gray"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_alipay"
+            android:drawablePadding="@dimen/margin_s"
+            android:drawableRight="@drawable/selector_diy_rbtn_check"
+            android:paddingLeft="@dimen/margin_l"
+            android:paddingRight="@dimen/margin_l"
+            android:text="支付宝"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/txtsize_l"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/payorder_btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_l"
+        android:background="@drawable/shape_bg_btn_orange"
+        android:text="确认支付"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize_l" />
+</LinearLayout>

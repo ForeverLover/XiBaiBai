@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ScaleView">
+        <attr name="modelby" format="integer">
+            <enum name="by_width" value="1"></enum>
+            <enum name="by_height" value="2"></enum>
+        </attr>
+        <attr name="multiple" format="float" />
+    </declare-styleable>
+    <declare-styleable name="PickListLayout">
+        <attr name="isShowHeader" format="boolean" />
+        <attr name="headerTag" format="string" />
+        <attr name="headerContent" format="string" />
+    </declare-styleable>
+</resources>

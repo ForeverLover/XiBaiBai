@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 一级框架页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_l">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细停车位置"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简单说明您爱车的位置，每次预约更轻松。"
+                android:textColor="@color/txt_darkgray"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/parkinfo_vg_homepark"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/parkinfo_img_homep"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/nowvisit_icon_homep" />
+
+            <ImageView
+                android:id="@+id/parkinfo_img_homepchecked"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/nowvisit_icon_checked"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/parkinfo_vg_companypark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_s">
+
+            <ImageView
+                android:id="@+id/parkinfo_img_companyp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/nowvisit_icon_companyp" />
+
+            <ImageView
+                android:id="@+id/parkinfo_img_companypchecked"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/nowvisit_icon_checked"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/txtsize_l">
+
+        <RelativeLayout
+            android:id="@+id/parkinfo_vg_content"
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/parkinfo_vg_contenttxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/parkinfo_edt_txtdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/parkinfo_img_clear"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="4dp"
+                    android:src="@drawable/nowvisit_icon_close" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/parkinfo_vg_contentvoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <com.jph.xibaibai.mview.scaleview.ScaleImageView
+                    android:id="@+id/parkinfo_img_pressvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/parkinfo_txt_voidtag"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="6dp"
+                    android:clickable="true"
+                    android:src="@drawable/selector_nowvisit_voice"
+                    app:modelby="by_height"
+                    app:multiple="1.0" />
+
+                <TextView
+                    android:id="@+id/parkinfo_txt_recordtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="@+id/parkinfo_img_pressvoice"
+                    android:layout_alignRight="@+id/parkinfo_img_pressvoice"
+                    android:background="@drawable/nowvisit_bg_voicelenth"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtsize_s"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/parkinfo_txt_voidtag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="按住添加语音"
+                    android:textColor="@color/txt_darkgreen"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/parkinfo_img_change"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:layout_toRightOf="@+id/parkinfo_vg_content"
+            android:padding="3dp"
+            android:src="@drawable/nowvisit_icon_change" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="尽量完善，如果您知道"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="参考：负二楼，A区或红色，62号车位"
+        android:textColor="@color/txt_darkgray"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_divider"
+        android:layout_marginTop="@dimen/margin_l"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/parkinfo_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        android:text="标题"
+        android:textColor="@color/txt_black"
+        android:textSize="@dimen/txtsize_m" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价："
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_s" />
+
+        <TextView
+            android:id="@+id/parkinfo_txt_totalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥100.00"
+            android:textColor="@color/txt_orange"
+            android:textSize="@dimen/txtsize_s" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地点："
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_s" />
+
+        <TextView
+            android:id="@+id/parkinfo_txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成都市"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_s" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="@dimen/margin_s"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车型："
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_s" />
+
+        <TextView
+            android:id="@+id/parkinfo_txt_carinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="宝马 520"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_s" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/parkinfo_btn_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/margin_l"
+        android:layout_marginRight="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_l"
+        android:background="@drawable/shape_bg_btn_orange"
+        android:text="预约"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize_l" />
+</LinearLayout>

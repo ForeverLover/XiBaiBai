@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 产品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_l"
+    android:paddingRight="@dimen/margin_l"
+    android:paddingTop="@dimen/margin_m">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/itemrecord_txt_way"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成功洗车"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/txtsize_m" />
+
+            <TextView
+                android:id="@+id/itemrecord_txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015.08.05 16:00"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/txtsize_s" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemrecord_txt_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="+30"
+            android:textColor="@color/txt_yellow"
+            android:textSize="@dimen/txtsize_m" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/itemdetailrecord_v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin_m"
+        android:background="@drawable/shape_line_dotted" />
+</LinearLayout>

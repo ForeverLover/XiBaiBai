@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 产品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_frame"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_l">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/addcomment_img_employeehead"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:riv_oval="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_s"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addcomment_txt_employeename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张师傅"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/txtsize_l" />
+
+                <TextView
+                    android:id="@+id/addcomment_txt_employeephone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="000000001"
+                    android:textColor="@color/txt_gray"
+                    android:textSize="@dimen/txtsize_s" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:background="@color/divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_l">
+
+            <TextView
+                android:id="@+id/addcomment_txt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/margin_m"
+                android:layout_marginTop="@dimen/margin_m"
+                android:text="评分"
+                android:textColor="@color/txt_black"
+                android:textSize="@dimen/txtsize_l" />
+
+            <RatingBar
+                android:id="@+id/addcomment_ratingbar_employeestar"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:progressDrawable="@drawable/ratingbar_level"
+                android:rating="5.0" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_divider"
+            android:background="@color/divider" />
+
+        <EditText
+            android:id="@+id/addcomment_edt_comment"
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="250dp"
+            android:gravity="left|top"
+            android:hint="说点什么吧，对别人有帮助哦"
+            android:padding="@dimen/margin_l"
+            android:textColor="@color/txt_black"
+            android:textColorHint="@color/txt_gray"
+            android:textSize="@dimen/txtsize_m" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addcomment_btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_l"
+        android:background="@drawable/shape_bg_btn_orange"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txtsize_l" />
+
+</LinearLayout>

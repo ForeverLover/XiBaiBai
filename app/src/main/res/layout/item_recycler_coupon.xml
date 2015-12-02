@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 产品 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_m"
+    android:background="@drawable/coupon_bg_item"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_coupon_txt_pricetag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_coupon_txt_price"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_l"
+            android:text="￥"
+            android:textColor="@color/txt_orange"
+            android:textSize="@dimen/txtsize_m" />
+
+        <TextView
+            android:id="@+id/item_coupon_txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/item_coupon_txt_pricetag"
+            android:text="30"
+            android:textColor="@color/txt_orange"
+            android:textSize="45sp" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="@dimen/margin_l"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_coupon_txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="洗车券"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_m" />
+
+        <TextView
+            android:id="@+id/item_coupon_txt_validtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="有效期至2016-08-09"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_m" />
+
+        <TextView
+            android:id="@+id/item_coupon_txt_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:text="[洗车优惠]"
+            android:textColor="@color/txt_darkgray"
+            android:textSize="@dimen/txtsize_m" />
+    </LinearLayout>
+</LinearLayout>

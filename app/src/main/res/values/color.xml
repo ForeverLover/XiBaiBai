@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0033</color>
+    <color name="bg">#f6f5fa</color>
+    <color name="bg_title">#db3839</color>
+    <color name="txt_black">#1a1a1a</color>
+    <color name="txt_gray">#949494</color>
+    <color name="txt_darkgray">#747474</color>
+    <color name="txt_orange">#e68e5e</color>
+    <color name="txt_red">#ff6a6b</color>
+    <color name="txt_e_gray">#cccccc</color>
+    <color name="txt_darkred">#db3833</color>
+    <color name="txt_darkgreen">#00a084</color>
+    <color name="hint">#cccccc</color>
+    <color name="selected">#fb7655</color>
+    <color name="halftransparent_gray">#50949494</color>
+    <color name="trans_white_50">#7fffffff</color>
+    <color name="trans_white_75">#bfffffff</color>
+    <color name="divider">#d9d9d9</color>
+    <color name="bg_green">#25c2a7</color>
+    <color name="bg_gray">#e6e6e6</color>
+    <color name="bg_yellow">#ffba58</color>
+    <color name="txt_yellow">#f0a233</color>
+    <color name="bg_orange">#ff8e04</color>
+    <color name="bg_transp">#00000000</color>
+    <color name="bg_code_send">#61B42C</color>
+    <color name="bg_code_default">#c6c6c6</color>
+    <color name="bg_main_guide">#AE000000</color>
+    <color name="theme_color_two">#45B6B0</color>
+    <color name="tip_color">#333333</color>
+    <color name="login_selector">#222222</color>
+    <color name="them_color">#106ab1</color>
+    <color name="rg_code_color">#dddddd</color>
+</resources>

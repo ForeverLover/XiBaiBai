@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_transp">
+
+        <View
+            android:id="@+id/prohscroll_v_left"
+            android:layout_width="0dp"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:id="@+id/prohscroll_ll_pros"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+        <View
+            android:id="@+id/prohscroll_v_right"
+            android:layout_width="0dp"
+            android:layout_height="1dp" />
+    </LinearLayout>
+</HorizontalScrollView>

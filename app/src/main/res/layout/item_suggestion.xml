@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 测试页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_l"
+    android:paddingBottom="@dimen/margin_l"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_suggestion_img_show"
+        android:layout_width="60dp"
+        android:layout_marginRight="@dimen/margin_m"
+        android:src="@color/red"
+        android:layout_height="60dp" />
+    <TextView
+        android:id="@+id/item_suggestion_txt_title"
+        android:layout_toRightOf="@+id/item_suggestion_img_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="建议"
+        android:textColor="@color/txt_black"
+        android:textSize="@dimen/txtsize_l" />
+    <TextView
+        android:id="@+id/item_suggestion_txt_content"
+        android:layout_toRightOf="@+id/item_suggestion_img_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_s"
+        android:layout_marginLeft="1dp"
+        android:layout_below="@+id/item_suggestion_txt_title"
+        android:text="建议建议建议建议建议建议建议建议建议建议建议建议建议建议建议建议建议"
+        android:textColor="@color/txt_gray"
+        android:textSize="@dimen/txtsize_s" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 首页title -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bg_title"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="24dp"
+            android:src="@drawable/main_icon_logo" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s">
+
+            <LinearLayout
+                android:id="@+id/main_vg_addcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/main_icon_addcar" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/main_txt_platenum"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtsize_s" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_vg_platenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/main_txt_platenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="川A 88888"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txtsize_s" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/main_icon_platenum"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_m"
+        android:paddingRight="@dimen/margin_m">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:text="限行尾号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_m" />
+
+        <TextView
+            android:id="@+id/main_txt_limitrule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_s"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txtsize_m" />
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/main_img_left"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg_transparent_gray"
+        android:padding="@dimen/margin_m"
+        app:riv_oval="true"
+        android:src="@drawable/main_icon_profile" />
+
+</RelativeLayout>
